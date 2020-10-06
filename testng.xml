@@ -7,7 +7,7 @@
 
     <test name="Test">
       <classes>
-          <class name="Test1"></class>
+          <class name="AmazonApiDemoAppAppium"></class>
       </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

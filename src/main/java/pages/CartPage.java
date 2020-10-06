@@ -19,11 +19,11 @@ public class CartPage extends AbstractScreen {
         loadPage();
     }
 
-    @AndroidFindBy(className = "android.widget.TextView")
+    @AndroidFindBy(xpath = "(//*[@class='android.view.View'])[5]")
     WebElement productNameInCartPage ;
-    @AndroidFindBy(className = "android.widget.TextView")
+    @AndroidFindBy(xpath = "(//*[@class='android.view.View'])[5]")
     WebElement productDescInCartPage ;
-    @AndroidFindBy(className = "android.widget.TextView")
+    @AndroidFindBy(xpath = "(//*[@class='android.view.View'])[5]")
     WebElement productPriceInCartPage ;
    
 public void verifyAndStoreProductNameInCartPage(String expected){

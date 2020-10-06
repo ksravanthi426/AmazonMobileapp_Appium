@@ -11,7 +11,7 @@ public class AmazonApiDemoAppAppium {
     private LogintoApp loginScreen;
     private ProductDetails productDetail;
     private HomePage homepage;
-   
+    private CartPage cartpage;
 
     @AfterMethod
     public void afterMethod() {
@@ -40,6 +40,7 @@ public class AmazonApiDemoAppAppium {
     	loginScreen.veriyLoginBtnIsSelected();
     	loginScreen.logintoApp("ksravanthi", "Admin123");
          productDetail.verifyAndStoreProductNameInPDP("ProductName");
+         cartpage.verifyAndStoreProductDescInCartPage("ProductName");
          homepage.searchProduct();
          homepage.selectProductFromList();
          
