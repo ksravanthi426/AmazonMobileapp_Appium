@@ -88,32 +88,5 @@ public class TestSetup {
         return driver;
     }
 
-//	private void setDriver() throws MalformedURLException {
-//
-//		System.out.println("Launching Android Driver ..");
-//		driver = initAppiumDriver();
-//	}
-//	private AndroidDriver initAppiumDriver() throws MalformedURLException {
-//
-//            // Launching the App
-//
-//            serverUrl = new URL("http://localhost:" + APPIUM_PORT + "/wd/hub");
-//            driver = new AndroidDriver(serverUrl, capabilities);
-//            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-//            return driver;
-//	}
-//
-//	@BeforeClass
-//	public void initializeTestSetup() {
-//		try {
-//			setDriver();
-//		} catch (Exception e) {
-//			System.out.println("Error....." + e.getStackTrace());
-//		}
-//	}
 
-//	@AfterClass
-//	public void tearDown() {
-//		driver.quit();
-//	}
 }
