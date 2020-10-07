@@ -65,7 +65,7 @@
 	<!-- using javax.mail.jar and javax.activation.jar trying to send report as zip file -->
 	<target name="sendMail" depends="makexsltreports">
 		<zip destfile="${project.dir}/XSLT_Reports/output.zip" basedir="${project.dir}/XSLT_Reports/output" />
-		<mail tolist="koduri.sravanthi@infosys.com" from="ksravanthi426@gmail.com"
+		<mail tolist="ksravanthi426@gmail.com" from="ksravanthi426@gmail.com"
 		subject="Email subject" mailhost="smtp.gmail.com" encoding="mime" charset="ISO-8859-1"
 		mailport="465" SSL="true" user="ksravanthi426@gmail.com" password="Sravanthi123$">
 			<attachments>
